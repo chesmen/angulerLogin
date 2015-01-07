@@ -1,7 +1,7 @@
 app.controller('BaseCtrl', function ($scope, $rootScope, siteName, NotifyService, AuthService) {
     $scope.siteName = siteName;
     $rootScope.currentUser = {};
-
+    $scope.date = new Date();
     // default page title
     $scope.pageTitle = 'Home';
 

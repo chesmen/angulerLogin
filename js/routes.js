@@ -3,6 +3,10 @@ app.config(['$routeProvider',function($routeProvider) {
 		.when('/', {
 			templateUrl : 'partials/pages/home.html'
 		})
+		.when('/home', {
+			templateUrl: "partials/user/home.html",
+			controller: "UserHomeCtrl"
+		})
 		.when('/contact', {
 			templateUrl : 'partials/pages/contact.html',
 			controller : 'ContactCtrl'
